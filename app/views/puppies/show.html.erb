@@ -3,6 +3,7 @@
 <%= render @puppy %>
 
 <div>
+  <%= button_to "Reserve this puppy", checkout_create_path, remote: true %>
   <%= link_to "Edit this puppy", edit_puppy_path(@puppy) %> |
   <%= link_to "Back to puppies", puppies_path %>
 

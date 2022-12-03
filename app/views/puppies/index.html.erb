@@ -7,6 +7,7 @@
     <%= render puppy %>
     <p>
       <%= link_to "Show this puppy", puppy %>
+      <%= button_to "Reserve this puppy", checkout_create_path, params: {id: puppy.id}, data: { turbo: false }, remote: true %>
     </p>
   <% end %>
 </div>
